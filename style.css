@@ -72,7 +72,7 @@ ul.grid li{
 }
 
 ul.grid li img{
-	width:250px;
+	width:auto;
 	height:250px;
 	object-fit: cover;
 	display:block;
@@ -81,7 +81,7 @@ ul.grid li img{
 
 ul.list{
 	list-style: none;
-	width: 500px;
+	width: auto;
 	margin: 0 auto;
 	text-align: left;
 }
