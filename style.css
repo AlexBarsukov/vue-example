@@ -59,7 +59,6 @@ body{
  }
  ul.grid{
 	list-style: none;
-	/*width: 570px;*/
 	width: auto;
 	margin: 0 auto;
 	text-align: left;

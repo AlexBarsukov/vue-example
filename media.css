@@ -13,6 +13,15 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+ul.grid{
+
+    list-style: none;
+    /* width: 570px; */
+    margin-left: 20px;
+    text-align: left;
+   cursor: pointer;
+}
+
 ul.grid li img{
 	width:100px;
 	height:100px;

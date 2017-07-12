@@ -1,8 +1,26 @@
 var example = new Vue({
 	el: "#app",
+	methods: {
+		clickFunc: function()
+				{
+					if (this.layout == 'grid') 
+					{
+						this.layout = 'list',
+						this.status = false
+					}
+					else 
+					{
+						this.layout = 'grid',
+						this.status = true
+					}
+				},
+			ss: function(){
+				console.log(this.status)
+			}	
+			},
 	data: {
 		layout: 'grid',
-		status: 'true',
+		status: true,
 		items: [{
 			"title": "Офис компании Google",
 			"url": "http://google.ru",
@@ -39,28 +57,9 @@ var example = new Vue({
 				"large": "https://img.grouponcdn.com/coupons/dsh9cCJiSizPRWtZH7DRrg/amazon_com-500x500",
 					}
 			}]
-	},
-	methods: {
-		
-		clickFunc: function()
-				{
-					if (this.layout == 'grid') 
-					{
-						this.layout = 'list'
-					}
-					else 
-					{
-						this.layout = 'grid',
-						this.status = 'false'
-					}
-				}	
-			},
-	// methods: {
-		replacePic: function(){
-			if (this.status == 'false') {
-
-			}
-		}
+	}
+	
+	
 	
 
 });
