@@ -23,16 +23,17 @@ ul.grid{
 }
 
 ul.grid li img{
-	width:100px;
-	height:100px;
+	width:145px;
+	height:145px;
 	object-fit: cover;
 	display:block;
 	border:none;
 }
 
 ul.list li img{
-	width:100px;
-	height:100px;
+	width:145px;
+	height:145px;
+	margin-right: 10px;
 	float:left;
 	border:none;
 }	
