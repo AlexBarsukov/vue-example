@@ -13,19 +13,6 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
-
-}
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-	
-
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
 ul.grid li img{
 	width:100px;
 	height:100px;
@@ -40,6 +27,19 @@ ul.list li img{
 	float:left;
 	border:none;
 }	
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
  
 
 }
