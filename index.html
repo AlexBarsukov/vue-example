@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Меню</title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/bootstrap-grid-3.3.1.min.css" />
+    <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="media.css">
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <!-- навбар -->
+    <div id="bar">
+        <div class="topline">
+            <div class="col-md-12 col-xs-12">
+                <div class="title_text">
+                    Офисы крупнейших IT-компаний
+                </div>
+                <div class="clear"></div>
+                <div class="buttons">
+                    <div class="icons">
+                        <a class="list" v-bind:class="{'active':layout == 'list'}" v-on:click="clickFunc"><i class="fa fa-list" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- конец навбара -->
+    <div class="content">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+            <ul v-if="layout == 'grid'" class="grid">
+        <li v-for="item in items">
+            <a v-bind:href="item.url" target="_blank" title="item.descr"><img v-bind:src="item.image.large" /></a>
+        </li>
+    </ul>
+
+    <ul v-if="layout == 'list'" class="list">
+        <li v-for="item in items">
+            <a v-bind:href="item.url" target="_blank" title="item.descr"><img v-bind:src="item.image.small" /></a>
+            <p>{{item.title}}</p>
+        </li>
+    </ul>
+        </div>
+    </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
